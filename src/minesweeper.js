@@ -57,7 +57,7 @@ const flipTile = (playerBoard, bombBoard, rowIndex, columnIndex) => {
         playerBoard[rowIndex][columnIndex] = 'B';
     }
     else {
-        playerBoard[rowIndex][columnIndex] = getNumberOfNeighborBombs(bombBoard, rowIndex, columnIndex);
+        playerBoard[rowIndex][columnIndex] = getNumberOfNeighborBombs(rowIndex, columnIndex);
     }
 }
 
